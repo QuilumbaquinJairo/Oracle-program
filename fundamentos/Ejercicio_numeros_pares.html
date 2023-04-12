@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Imprimir numeros pares</h1>
+
+
+<p>Realizar un programa que imprima los numeros pares del 1-100 y al final imprimir la palabra FIN</p>
+
+<script>
+
+    var contador=1;
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+
+    while(contador<=100){
+        if(contador%2==0){
+            imprimir(contador);
+        }
+        contador++;
+    }
+
+    imprimir("FIN");
+
+
+</script>

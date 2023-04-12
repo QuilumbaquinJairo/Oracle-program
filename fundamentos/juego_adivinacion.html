@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h1>Juego de Adivinacion</h1>
+
+<script>
+
+    var intentos=3;
+    var contador=1;
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    
+
+    var numeroSistema=Math.round(Math.random()*10);
+
+    while(contador<=intentos){
+
+        var numeroUsuario=parseInt(prompt("Ingrese un numero"));
+
+        if(numeroUsuario==numeroSistema){
+            alert("Usted acerto el numero en el intento "+contador);
+            break;
+        }else{
+            alert("Usted fallo el numero");
+            contador++;
+        }
+        
+        
+    }
+
+    imprimir("El numero pensado era "+numeroSistema);
+
+    
+
+</script>

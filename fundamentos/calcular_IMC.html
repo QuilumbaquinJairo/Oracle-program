@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h1>Programa Calculo IMC</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    function calcularImc(altura,peso){
+        imc=peso/(altura*altura);
+        return imc;
+    }
+
+     
+    alturaUsuario=prompt("Informe su altura: ");
+    pesoUsuario=prompt("Informe su peso: ");
+
+    imc1=calcularImc(alturaUsuario,pesoUsuario);
+
+
+    imprimir("El valor de IMC es:  "+ imc1);
+
+    if(imc1<18.5){
+        imprimir("Abajo del peso recomendado");
+    }    
+    
+    if(imc1>18.5&&imc1<24.9){
+        imprimir("Dentro del peso recomendado");
+    }
+    
+    if(imc1>25&&imc1<29.9){
+        imprimir("Signos de preobesidad");
+    }
+
+    if(imc1>=30){
+        imprimir("Tiene obesidad");
+    }
+    
+
+    
+
+
+</script>

@@ -1,0 +1,73 @@
+<h1>Desafio Paleta de Colores</h1>
+
+<p>El desafío de este ejercicio es poder cambiar el color del pincel, haciendo clic en una paleta de colores que vamos a tener en el extremo izquierdo superior de nuestro canvas, vamos a disponibilizar 3 colores para que el usuario pueda escoger el color que quiera en su pincel, los colores que usaremos serán el rojo, verde y azul (red, green y blue). El usuario tiene que visualizar algo así:</p>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla=document.querySelector("canvas");
+    var pincel=pantalla.getContext("2d");
+    var xc=0;
+    var yc=0;
+    var colorPaleta;
+    pincel.fillStyle="grey";
+    pincel.fillRect(0,0,600,400);
+
+    function crearCuadrados(x,y,color){
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y,50,50);
+    }
+
+    crearCuadrados(xc,yc,"red");
+    crearCuadrados(xc+50,yc,"green");
+    crearCuadrados(xc+100,yc,"blue");
+
+    function cambiarColor(evento){
+        var x= evento.pageX-pantalla.offsetLeft;
+        var y=evento.pageY-pantalla.offsetTop;
+        
+        if((x<xc+50)&&(x>0)&&(y<yc+50)&&(y>0)){
+            colorPaleta="red";
+        }else if((x<xc+100)&&(x>50)&&(y<yc+50)&&(y>0)){
+            colorPaleta="green";
+        }else if((x<xc+150)&&(x>100)&&(y<yc+50)&&(y>0)){
+            colorPaleta="blue";
+        }
+
+    }
+
+    pantalla.onclick=cambiarColor;
+
+
+
+    function dibujarCirculo(evento) {
+
+        if(puedoDibujar) {
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+            pincel.fillStyle = colorPaleta;
+            pincel.beginPath();
+            pincel.arc(x, y, 5, 0, 2 * 3.14);
+            pincel.fill();
+        }
+
+    }
+
+    pantalla.onmousemove = dibujarCirculo;
+
+    function habilitarDibujar() {
+
+        puedoDibujar = true;
+    }
+
+    function deshabilitarDibujar() {
+
+        puedoDibujar = false;
+    }
+
+    pantalla.onmousedown = habilitarDibujar;
+
+    pantalla.onmouseup = deshabilitarDibujar;
+
+        
+</script>

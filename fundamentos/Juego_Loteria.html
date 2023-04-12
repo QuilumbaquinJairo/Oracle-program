@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Juego de Loteria</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    function sorteo(n){
+       var numeroGanador= Math.round(Math.random()*n);
+       return numeroGanador;
+    }
+
+    var numeroUsuario=parseInt(prompt("Ingrese un numero"));
+
+    var numeroSistema=sorteo(numeroUsuario);
+
+    if(numeroUsuario==numeroSistema){
+        imprimir("Usted acerto el numero");
+    }else{
+        imprimir("Usted fallo el numero, el numero pensado era "+numeroSistema);
+    }
+
+</script>
