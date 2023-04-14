@@ -29,6 +29,10 @@ nav a{
     font-size: 22px;
 }
 
+nav a:hover{
+    color: #c78c19;
+}
+
 .productos{
     width: 940px;
     margin: 0 auto;
@@ -44,9 +48,8 @@ nav a{
     padding: 30px 20px;
     box-sizing: border-box;
 
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .productos h2{
@@ -63,4 +66,31 @@ nav a{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    border-color: #c78c19;
+    font-size: 33px;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+    
+}
+
+.copyrigth{
+
+    color: #BBBBBB;
+    font-size: 13px;
+    margin: 20px;
 }
