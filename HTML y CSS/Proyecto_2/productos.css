@@ -28,3 +28,20 @@ nav a{
     text-decoration: none;
     font-size: 22px;
 }
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
