@@ -1,20 +1,24 @@
 
 header{
-    background-color: grey;
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
 .caja{
     width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
 nav{
     position: absolute;
-    top: 20%;
-    left: 55%;
+    top: 110px;
+    right: 0;
 }
+
 nav li{
     display: inline;
-    margin: 0 15px;
+    margin: 0 0 0 15px;
 }
 
 nav a{
