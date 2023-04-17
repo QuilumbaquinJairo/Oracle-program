@@ -1,4 +1,3 @@
-
 header{
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -33,58 +32,34 @@ nav a:hover{
     color: #c78c19;
 }
 
-.productos{
+main{
     width: 940px;
     margin: 0 auto;
-    padding: 50px;
 }
 
-.productos li{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-
-    border: 2px solid black;
-    border-radius: 10px;
+form{
+    margin: 40px 0;
 }
 
-.productos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.producto-descripcion{
-    font-size: 18px;
-}
-
-.producto-precio{
-    margin-top: 10px;
+form label{
+    display: block;
     font-size: 20px;
-    font-weight: bold;
+    margin: 0 0 10px;
 }
 
-.productos li:hover{
-    border-color: #c78c19;
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
 
-.productos li:hover h2{
-    border-color: #c78c19;
-    font-size: 33px;
-}
-
-.productos li:active{
-    border-color: #088c19;
-}
 
 footer{
     text-align: center;
     background: url(imagenes/bg.jpg);
     padding: 40px;
-    
+
 }
 
 .copyrigth{
@@ -93,4 +68,3 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-
