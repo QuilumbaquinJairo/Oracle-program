@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
     
 
@@ -12,29 +13,32 @@
 </head>
 
     <body>
-        <div>
-           <h1 class="titulo-principal">Barberia Alura</h1>
-        </div>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="logo de la barberia alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <img id="banner" src="imagenes/banner.jpg" alt="Fondo-pagina" width="100%">
-        
-        <div class="principal">
+        <main>
+        <section class="principal">
         
             <h2 class="tituloCentralizado">Sobre la Barbería Alura</h2>
         
-            <p>
-                Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.
-            </p>
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
 
-            <p id="mision">
-                <em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em> 
-            </p>
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes”.</strong></em></p>
             
-            <p>
-                Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.
-            </p>
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
 
-        </div>
+        </section>
 
         <div class="diferenciales">
 
@@ -49,6 +53,13 @@
             <img src="imagenes/diferenciales.jpg" alt="fondoDiferenciales" class="imgDiferenciales">
 
         </div>
+
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="pie-pagina">
+            <p class="copyrigth">&copy; Copyrigth Barberia Alura 2020</p>
+        </footer>
     </body>
 
 </html>

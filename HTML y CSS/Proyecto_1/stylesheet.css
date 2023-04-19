@@ -1,50 +1,95 @@
-p{
- text-align: center;   
-    
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
-.titulo-principal{
-    
-    padding-left: 20px;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-em strong{
-    color: red;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-#mision{
-    font-size: 20px;
-}
-.principal{
-    background: #CCCCCC;
-    padding: 20px;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.tituloCentralizado{
-    text-align: center;
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
 }
 
-.diferenciales{
-    background-color: white;
-    padding: 30px;
+nav a:hover{
+    color: #c78c19;
 }
 
-.diferenciales h2{
-    text-align: center;
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-ul{
+.productos li{
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
-.items{
-    font-style: italic;
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.imgDiferenciales{
-    width: 50%;
- }
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:hover h2{
+    border-color: #c78c19;
+    font-size: 33px;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+
+}
+
+.copyrigth{
+
+    color: #BBBBBB;
+    font-size: 13px;
+    margin: 20px;
+}
 
