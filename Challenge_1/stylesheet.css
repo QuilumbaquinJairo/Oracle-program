@@ -105,7 +105,7 @@ body{
         display: flex;
        border: 0.1rem solid black;
         padding: 2rem;
-       background-color: #ccc;
+        background-color: #ccc;
         flex-direction: row;
     }
     .ingreso-texto{
