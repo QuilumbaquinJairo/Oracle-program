@@ -70,10 +70,15 @@ body{
 
 }
 
+
 .encriptar{
     background-color: #0A3871;
     border: #0A3871;
     color: white;
+}
+
+.encriptar:active{
+    background-color: #0A2F5D;
 }
 
 .desencriptar{
@@ -81,6 +86,11 @@ body{
     border: 1px solid #0A3871;
     color: #0A3871;
 }
+
+.desencriptar:active{
+    background-color: #E6EBF0;
+}
+
 #copy-button{
     margin-top: 1rem;
 }
@@ -98,6 +108,7 @@ body{
 .salida-desencriptada{
     border-color: white;
     resize: none;
+    background-color: white;
 }
 
 .salida-desencriptada::placeholder{
