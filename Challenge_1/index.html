@@ -11,14 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="reset.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="preload" href="normalize.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preload" href="stylesheet.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preload" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="js/script.js"></script>
     
     <title>Encriptador</title>
 </head>
@@ -326,7 +328,7 @@
                     </clipPath>
                 </defs>
             </svg>
-        <textarea class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+        <textarea id="myTextarea" class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
 
         <button type="button" class="boton encriptar" id="copy-button">Copy</button>
 
