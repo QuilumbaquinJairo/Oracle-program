@@ -10,20 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
 
-    <link rel="preload" href="reset.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="preload" as="style" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="preload" href="normalize.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" as="style" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preload" href="stylesheet.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preload" as="style" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
     
     <title>Encriptador</title>
 </head>
 
 <body>
+
 
 <header>
     <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +38,7 @@
 <main class="flex-container">
     <section class="ingresoEncriptador">
             <form>
-                <textarea class="ingreso-texto" placeholder="Ingrese el texto aqui"></textarea>
+                <label for="myTextarea"></label><textarea id="myTextarea" class="ingreso-texto" placeholder="Ingrese el texto aqui"></textarea>
 
                 <div class="botones">
                     <p>
@@ -44,8 +48,8 @@
                             <line x1="12" y1="8" x2="12" y2="12" />
                             <line x1="12" y1="16" x2="12.01" y2="16" />
                         </svg> Solo letras minúsculas y sin acentos</p>
-                    <input id="Encriptar" type="submit" value="Encriptar" class="boton encriptar">
-                    <input type="submit" value="Desencriptar" class="boton desencriptar">
+                    <button type="button" id="Encriptar" class="boton encriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="button" id="Desencriptar" class="boton desencriptar">Desencriptar</button>
                 </div>
             </form>
     </section>
@@ -326,10 +330,16 @@
                     </clipPath>
                 </defs>
             </svg>
-        <textarea class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
+        <label>
+            <textarea class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+        </label>
+
+        <button type="button" class="boton encriptar" id="copy-button">Copy</button>
 
     </section>
 </main>
-
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
