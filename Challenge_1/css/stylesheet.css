@@ -99,12 +99,14 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 3px;
+
 }
 
 .salida-desencriptada{
     border-color: white;
     resize: none;
     background-color: white;
+    border-radius: 5px;
 }
 
 .salida-desencriptada::placeholder{
