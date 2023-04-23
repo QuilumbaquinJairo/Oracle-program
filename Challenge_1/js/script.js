@@ -70,6 +70,11 @@ function desencriptarButton(){
     }
 }
 
+function copiarButton(){
+    var textarea = document.getElementById("ouputTextarea");
+        textarea.select();
+        navigator.clipboard.writeText(textarea.value);
+}
 
 
 
