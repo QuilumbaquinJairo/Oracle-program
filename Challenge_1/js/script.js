@@ -4,7 +4,7 @@ function getText(){
 }
 function encriptar(){
     let texto = getText();
-    var texto1= texto.replaceAll
+    alert(texto);
 }
 
 
