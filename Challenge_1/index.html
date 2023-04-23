@@ -48,8 +48,8 @@
                             <line x1="12" y1="8" x2="12" y2="12" />
                             <line x1="12" y1="16" x2="12.01" y2="16" />
                         </svg> Solo letras minúsculas y sin acentos</p>
-                    <button type="button" id="Encriptar" class="boton encriptar" onclick="encriptar()">Encriptar</button>
-                    <button type="button" id="Desencriptar" class="boton desencriptar">Desencriptar</button>
+                    <button type="button" id="Encriptar" class="boton encriptar" onclick="encriptarButton()">Encriptar</button>
+                    <button type="button" id="Desencriptar" class="boton desencriptar" onclick="desencriptarButton()">Desencriptar</button>
                 </div>
             </form>
     </section>
@@ -331,7 +331,7 @@
                 </defs>
             </svg>
         <label>
-            <textarea class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+            <textarea id="ouputTextarea" class="salida-desencriptada" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
         </label>
 
         <button type="button" class="boton encriptar" id="copy-button">Copy</button>
