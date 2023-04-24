@@ -1,7 +1,12 @@
 const buttons = document.querySelectorAll("button");
 const textarea = document.getElementById("ouputTextarea");
 const myButton = document.getElementById("copy-button");
+const modButton=document.getElementById("modButton");
 
+modButton.addEventListener("click",()=>{
+    modButton.classList.toggle("active");
+
+});
 buttons.forEach(button => {
     button.addEventListener('click', function() {
     if(emptyOrwhitespaces()){
