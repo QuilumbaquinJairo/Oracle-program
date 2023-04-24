@@ -39,7 +39,7 @@ header{
     padding: 0 0.5rem 0;
     font-size: 2rem;
     resize: none;
-    width: 80vh;
+    width: 90%;
     border-radius: 5px;
     border-color: white;
     text-transform: lowercase;
@@ -53,6 +53,7 @@ header{
 .botones p{
     margin-bottom: 1rem;
     color: #5C7983;
+    text-align: center;
 }
 
 .botones svg{
@@ -70,6 +71,7 @@ header{
     padding: 10px 20px; /* add padding */
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-left:7.6rem;
 }
 
 .boton:hover{
@@ -130,12 +132,8 @@ header{
 }
 
 
-@media (min-width:850px ){
 
-    header{
-        margin-left: 10rem;
-        margin-top: 3rem;
-    }
+@media (min-width:850px ){
     .flex-container{
         display: flex;
         padding: 2rem;
@@ -143,10 +141,19 @@ header{
     }
     .ingreso-texto{
         margin: 1rem 18rem;
+        width: 58%;
     }
 
     .botones{
         margin: auto 18rem;
+    }
+
+    .botones p{
+        text-align: left;
+    }
+
+    .boton{
+        margin-left: auto;
     }
 
 }
