@@ -32,7 +32,7 @@ body{
     padding: 0 0.5rem 0;
     font-size: 2rem;
     resize: none;
-    width: 80vh;
+    width: 90%;
     border-radius: 5px;
     border-color: white;
     text-transform: lowercase;
@@ -46,6 +46,7 @@ body{
 .botones p{
     margin-bottom: 1rem;
     color: #5C7983;
+    text-align: center;
 }
 
 .botones svg{
@@ -63,6 +64,7 @@ body{
     padding: 10px 20px; /* add padding */
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-left:7.6rem;
 }
 
 .boton:hover{
@@ -123,7 +125,7 @@ body{
 
 
 
-@media (min-width:950px ){
+@media (min-width:850px ){
     .flex-container{
         display: flex;
        border: 0.1rem solid black;
@@ -133,11 +135,20 @@ body{
     }
     .ingreso-texto{
         margin: 1rem 18rem;
+        width: 58%;
     }
 
     .botones{
         font-size: 1.5rem;
         margin: auto 18rem;
+    }
+
+    .botones p{
+        text-align: left;
+    }
+
+    .boton{
+        margin-left: auto;
     }
 
 }
