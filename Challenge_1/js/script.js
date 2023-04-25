@@ -48,7 +48,7 @@ function desencriptar(){
 }
 
 function writeMessage(mensaje){
-    document.getElementById("ouputTextarea").value=mensaje;
+    document.getElementById("outputTextarea").value=mensaje;
 }
 function encriptarButton(){
     if(validaciones()!==true){
@@ -71,7 +71,7 @@ function desencriptarButton(){
 }
 
 function copiarButton(){
-    var textarea = document.getElementById("ouputTextarea");
+    var textarea = document.getElementById("outputTextarea");
         textarea.select();
         navigator.clipboard.writeText(textarea.value);
 }
