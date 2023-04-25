@@ -1,10 +1,11 @@
 const buttons = document.querySelectorAll("button");
-const textarea = document.getElementById("ouputTextarea");
+const textarea = document.getElementById("outputTextarea");
 const myButton = document.getElementById("copy-button");
 const modButton=document.getElementById("modButton");
 
 modButton.addEventListener("click",()=>{
     modButton.classList.toggle("active");
+    document.body.classList.toggle("dark-mode");
 
 });
 buttons.forEach(button => {
@@ -12,10 +13,8 @@ buttons.forEach(button => {
     if(emptyOrwhitespaces()){
         textarea.value="";
         textarea.setAttribute("placeholder", "Ningún mensaje fue Encontrado");
-        textarea.style.backgroundColor="white";
         myButton.style.visibility = "hidden";
     }else{
-        textarea.style.backgroundColor="#D8DFE8";
         myButton.style.visibility = "visible";
     }
     });
