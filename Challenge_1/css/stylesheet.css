@@ -5,7 +5,7 @@ html{
 body{
     font-size: 16px;/*1rem=10px*/
     font-family: 'Krub', sans-serif;
-
+    transition: background-color 0.5s ease;
 }
 
 header{
@@ -15,7 +15,6 @@ header{
 .header-container{
     width: 10rem;
     height: 10rem;
-    background: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,8 +176,8 @@ header{
 .salida-desencriptada{
     border-color: white;
     resize: none;
-    background-color: white;
     border-radius: 5px;
+    background-color: white;
 }
 
 .salida-desencriptada::placeholder{

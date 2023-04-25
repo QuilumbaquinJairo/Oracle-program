@@ -1,3 +1,23 @@
-.darkmode body{
+.dark-mode{
     background-color: #202124;
+}
+
+.dark-mode #myTextarea{
+    background-color: #3A3A3A;
+    border-color: #7E7E7E;
+    color:white;
+}
+
+.dark-mode #myTextarea::placeholder{
+    color:white;
+}
+
+.dark-mode #outputTextarea{
+    background-color: #3A3A3A;
+    border-color: #7E7E7E;
+    color:white;
+}
+
+.dark-mode #outputTextarea::placeholder{
+    color:white;
 }
