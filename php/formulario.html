@@ -1,0 +1,21 @@
+<form action="tutoriales/post_gmail" method="POST">
+    <?php echo insert_inputs(); ?>
+     
+    <div class="mb-3 row">
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="destinatario">Destinatario</label>
+        <input type="email" class="form-control" name="destinatario" id="destinatario" placeholder="suscríbete@joystick.com.mx">
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="asunto">Asunto del correo</label>
+        <input type="text" class="form-control" name="asunto" id="asunto" placeholder="El asunto del correo electrónico">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-12 col-md-12">
+        <label class="form-label" for="contenido">Mensaje</label>
+        <input type="text" class="form-control" name="contenido" id="contenido" placeholder="Escribe aquí...">
+      </div>
+    </div>
+    <button class="btn btn-success" type="submit"><i class="fas fa-paper-plane"></i> Enviar correo</button>
+  </form>
