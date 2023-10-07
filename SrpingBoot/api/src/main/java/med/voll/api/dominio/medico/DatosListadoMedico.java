@@ -1,0 +1,7 @@
+package med.voll.api.dominio.medico;
+
+public record DatosListadoMedico(Long id,String nombre, String especialidad, String documento, String email) {
+    public DatosListadoMedico(Medico medico){
+        this(medico.getId(), medico.getNombre(), medico.getDocumento(), medico.getEmail(), medico.getTelefono());
+    }
+}
