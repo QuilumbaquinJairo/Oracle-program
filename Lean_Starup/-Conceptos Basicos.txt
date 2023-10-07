@@ -1,0 +1,11 @@
+-una startup es una organizacion para crear nuevos productos y servicios en 
+condiciones de incertidumbre.
+
+MVP(Metodo de Experimentacion de Aprendizaje Validado)
+Construir
+Medir
+Aprender
+
+Es extremadamente necesario que validemos nuestro producto y nuestras hipótesis creadas para el producto. Lean Startup es un proceso de validación de hipótesis.
+
+Construimos el producto y las hipótesis para ello, medimos las respuestas teniendo primero una métrica establecida y aprendemos de los comentarios. A partir de ahí reconstruimos el negocio

@@ -8,6 +8,7 @@ modButton.addEventListener("click",()=>{
     document.body.classList.toggle("dark-mode");
 
 });
+
 buttons.forEach(button => {
     button.addEventListener('click', function() {
     if(emptyOrwhitespaces()){
